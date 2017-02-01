@@ -125,7 +125,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="section-heading">Parking</h1>
-                    <p class="section-paragraph">Paid on-street parking Mon-Fri 09:00 - 17:30.
+                    <p class="section-paragraph">Controlled on-street parking Mon-Fri 09:00 - 17:30.
                         Free outside of these days/hours.
                         <br/>
                         If you require to book continuous parking, a good and reliable option is <a href="https://www.justpark.com/">JustPark</a>.
@@ -182,31 +182,6 @@
                     }
                 }
             });
-        });
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
         });
     </script>
 
